@@ -1,9 +1,9 @@
 import streamlit as st 
-from dotenv import load_dotenv
-import os 
+from dotenv import load_dotenv 
 import openai
-from diffusers import StableDiffusionPipeline
 import torch
+import os 
+from diffusers import StableDiffusionPipeline
 
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
